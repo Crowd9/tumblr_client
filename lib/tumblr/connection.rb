@@ -1,11 +1,12 @@
 require 'faraday'
 require 'forwardable'
+require 'simple_oauth'
 
 # Copied from https://github.com/lostisland/faraday_middleware/blob/e68ff84470705c8a59d9aa99b98cb36101fa10ad/lib/faraday_middleware/request/oauth.rb#L74
 # to remove dependency on deprecated faraday middleware gem
 module FaradayMiddleware
   class OAuth < Faraday::Middleware
-    dependency 'simple_oauth'
+
     AUTH_HEADER = 'Authorization'
     CONTENT_TYPE = 'Content-Type'
     TYPE_URLENCODED = 'application/x-www-form-urlencoded'
