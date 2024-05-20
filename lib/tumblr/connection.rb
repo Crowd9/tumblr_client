@@ -5,7 +5,6 @@ require 'forwardable'
 # to remove dependency on deprecated faraday middleware gem
 module FaradayMiddleware
   class OAuth < Faraday::Middleware
-    dependency 'simple_oauth'
     AUTH_HEADER = 'Authorization'
     CONTENT_TYPE = 'Content-Type'
     TYPE_URLENCODED = 'application/x-www-form-urlencoded'
