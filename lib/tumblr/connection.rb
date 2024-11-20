@@ -1,5 +1,6 @@
 require 'faraday'
 require 'forwardable'
+require 'simple_oauth'
 
 # Copied from https://github.com/lostisland/faraday_middleware/blob/e68ff84470705c8a59d9aa99b98cb36101fa10ad/lib/faraday_middleware/request/oauth.rb#L74
 # to remove dependency on deprecated faraday middleware gem
